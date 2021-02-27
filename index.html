@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c99ef28fdf.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div id="form">
+                    <form onsubmit="return false" for="input">
+                        <button type="button" id="submit">submit</button>
+                        <input type="text" placeholder="Enter city name" id="input" name="input">
+                    </form>
+                </div>
+            </div>
+            <div class="simple">
+                <p id="weather"></p>
+                <p id="location"></p>
+                <div class="row">
+                    <p id="temp"></p>
+                    <div id="info">
+                        <p id="feels-like">Feels Like:</p>
+                        <div class="row" id="wind">
+                            <p id="wind-speed">Wind: MPH</p>
+                            <p id="wind-direction"><i id="wind-icon" class="fas fa-arrow-right"></i></p>
+                        </div>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

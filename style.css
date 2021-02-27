@@ -1,0 +1,53 @@
+* { 
+    margin:0;
+    border:0;
+    font-size:100%;
+    outline: 0;
+    padding:0;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height:100vh;
+}
+
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#form{
+
+    padding:.3rem;
+    margin: 1rem 1rem auto auto;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#input{
+    padding:.2rem;
+}
+
+.simple{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#temp{
+    font-size: 500%;
+}
+
+sup{
+    font-size: 40%;
+}
