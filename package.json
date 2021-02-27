@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwd-swd/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwd-swd/weather-app/issues"
+  },
+  "homepage": "https://github.com/hwd-swd/weather-app#readme",
+  "dependencies": {
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}
