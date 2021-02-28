@@ -2,7 +2,7 @@ import {displayError}  from './form';
 
 async function fetchWeather(cityName){
     try {
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=bd02432f77556bedd13769e0dd339369`);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=bd02432f77556bedd13769e0dd339369`);
         
         if(!response.ok){
             displayError()
