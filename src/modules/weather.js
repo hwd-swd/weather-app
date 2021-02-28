@@ -1,19 +1,20 @@
+import {displayError}  from './form';
+
 async function fetchWeather(cityName){
-    try{
+    try {
         let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=bd02432f77556bedd13769e0dd339369`);
         
-        // let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=bd02432f77556bedd13769e0dd339369`);
-        let responseJSON = await response.json();
-        if(responseJSON.main!=undefined){
+        if(!response.ok){
+            displayError()
+            
+        }
+        else{
+            let responseJSON = await response.json();
             console.log(responseJSON)
             return responseJSON
         }
-        else{
-            return false
-        }
-    }catch(err){
-        alert(err)
-        return false
+    } catch(err) {
+        displayError()
     }
 };
 
@@ -23,6 +24,7 @@ function getInfo(responseJSON){
     ans['city']=responseJSON.name;
     ans['country']=responseJSON.sys.country;
     ans['temperature']=responseJSON.main.temp;
+    ans['clouds']=responseJSON.clouds.all;
     ans['feels-like']=responseJSON.main.feels_like;
     ans['humidity']=responseJSON.main.humidity;
     ans['wind-speed']=responseJSON.wind.speed;

@@ -9,14 +9,20 @@
     <body>
         <div class="main">
             <div class="header">
-                <div id="form">
-                    <form onsubmit="return false" for="input">
-                        <button type="button" id="submit">submit</button>
-                        <input type="text" placeholder="Enter city name" id="input" name="input">
-                    </form>
+                <div class="col">
+                    <div id="form" class="item">
+                        <form onsubmit="return false" for="input">
+                            <button type="button" id="submit"><i class="fas fa-search"></i></button>
+                            <input type="text" placeholder="Search city" id="input" name="input">
+                        </form>
+                        
+                    </div>
+                    <span id="error" class="error" aria-live="polite"></span>
                 </div>
+                
+                
             </div>
-            <div class="simple">
+            <div class="simple item">
                 <p id="weather"></p>
                 <p id="location"></p>
                 <div class="row">
