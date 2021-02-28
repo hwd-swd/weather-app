@@ -6,13 +6,24 @@
     padding:0;
 }
 
+body{
+    background-color: black;
+}
+
 .main{
     display:flex;
     flex-direction: column;
     min-height: 100vh;
     height:100vh;
+    color:white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+::placeholder{
+    color:white;
+}
 
 .header{
     display:flex;
@@ -21,22 +32,37 @@
 }
 
 #form{
-
+    display:flex;
+    flex-direction: row;
     padding:.3rem;
-    margin: 1rem 1rem auto auto;
-
     border: 1px solid gray;
     border-radius: 4px;
 }
 
 #input{
     padding:.2rem;
+    border-color: white;
+    outline-color: white;
 }
 
 .simple{
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     margin:auto;
+    border-radius: 10px;
+}
+
+.item{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.col{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:1rem;
 }
 
 .row{
@@ -46,8 +72,44 @@
 
 #temp{
     font-size: 500%;
+    margin:0 .5rem;
+}
+
+#location{
+    font-size: 200%;
 }
 
 sup{
     font-size: 40%;
+}
+
+button,input{
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
+
+#info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0 .5rem;
+}
+
+#info p{
+    margin:.2rem;
+}
+
+.error {
+    width  : 100%;
+    padding: 0;
+    height:1rem;
+    font-size: 120%;
+    color: red;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
 }
